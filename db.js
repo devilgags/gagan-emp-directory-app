@@ -2,7 +2,7 @@ var mongoose = require("mongoose");
 var chalk = require('chalk');
 // var userModel=require("./models/user.model");
 // var storyModel=require("./models/story.model");
-var dbURI = 'mongodb://localhost/emp_dir_app';
+var dbURI = 'mongodb://gagan:JaiHo17*@ds043962.mlab.com:43962/emp_dir_app';
 
 function connect(){
     mongoose.connect(dbURI);
