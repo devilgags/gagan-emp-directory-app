@@ -1,3 +1,5 @@
+// This Filter sets the Acces-Control Headers for Cross origin support
+
 var corsFilter = function(app) {
     app.use('/emp-dir-services/*', function(request, response, next) {
         response.set({

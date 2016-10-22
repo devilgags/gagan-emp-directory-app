@@ -1,3 +1,5 @@
+//This is the entrypoint of the application. This file contains all the configurations of the application.
+
 var express = require('express');
 var path = require('path');
 var chalk = require('chalk');

@@ -1,5 +1,7 @@
-var Promise = require("bluebird");
-var mongoose = require("mongoose");
+//This is the DAO layer for employee. This file contains all the CRUD operations for employee. 
+
+var Promise = require("bluebird"); //Using bluebird for promise
+var mongoose = require("mongoose"); 
 var Schema = mongoose.Schema;
 
 //defining the employee schema
@@ -14,7 +16,7 @@ var employeeSchema = new Schema({
     updated_at: { type: Date, required: true, default: Date.now() }
 });
 
-
+//Associating the employee schema
 var Employee = mongoose.model('employee', employeeSchema);
 
 //setting the updated_at field using pre-save hook
