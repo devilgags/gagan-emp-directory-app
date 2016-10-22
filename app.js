@@ -9,7 +9,6 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var db = require("./db");
 var routes = require('./routes/routes');
-var users = require('./routes/users');
 var corsFilter=require('./routes/filters/cors.filter.js');
 var app = express();
 var router = express.Router();

@@ -8,7 +8,7 @@ var Schema = mongoose.Schema;
 var employeeSchema = new Schema({
     name: { type: String, required: true },
     email: { type: String, unique: true, required: true },
-    date_of_birth: { type: String, required: true },
+    date_of_birth: { type: Date, required: true },
     department: { type: String, required: true },
     gender: { type: String, required: true },
     age: { type: Number, required: true },
@@ -39,7 +39,7 @@ function addEmployee(employee) {
             if (emp != null) {
                 console.log(JSON.stringify(emp));
                 var message = "Employee with this email id already exists !";
-                console.log("Employee with this email id already exists !");
+                console.log("IN DAO : Employee with this email id already exists !");
                 resolve(message);
             }
             else {

@@ -1,7 +1,7 @@
 //This file contains all the route mappings for various routes for the application.
 
 var express = require('express');
-var employeeController=require('../controllers/employee.controller.js')
+var employeeController=require('../controller/employee.controller.js')
 var router = express.Router();
 
 
